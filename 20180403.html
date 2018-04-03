@@ -75,7 +75,8 @@
             <li>
                 <b style="color: black">HTML图像-标签img和源属性src</b><br>
                 <b>Example：</b><br>
-                <img src="http://img.zcool.cn/community/01690955496f930000019ae92f3a4e.jpg@2o.jpg" width="120" height="80">
+                <img src="http://img.zcool.cn/community/01690955496f930000019ae92f3a4e.jpg@2o.jpg" width="120"
+                     height="80">
             </li>
             <li>
                 <b>HTML图像-Alt属性</b><br>
@@ -85,14 +86,146 @@
             <li>
                 <b>HTML图像-高度和宽度</b><br>
                 <b>Example:</b><br>
-                <img src="http://img.zcool.cn/community/01690955496f930000019ae92f3a4e.jpg@2o.jpg" width="80" height="30">
+                <img src="http://img.zcool.cn/community/01690955496f930000019ae92f3a4e.jpg@2o.jpg" width="80"
+                     height="30">
             </li>
         </ul>
 
     </li>
 
     <li>
-        <b>HTML表格</b>
+        <b>HTML表格</b><br>
+        <b>表格定义使用标签table</b><br>
+        <b>Example:</b><br>
+        <table border="1">
+            <tr>
+                <td>row 1 ,cell 1</td>
+                <td>row 1 , cell 2</td>
+            </tr>
+
+            <tr>
+                <td>row 2 ,cell 1</td>
+                <td>row 2 ,cell 2</td>
+            </tr>
+        </table>
+        <hr align="left" width="170">
+        <b>有表头的表格*水平格式</b><br>
+        <table border="1">
+            <tr>
+                <th>Name:</th>
+                <th>Ses:</th>
+                <th>Telephone:</th>
+            </tr>
+            <tr>
+                <td>zhangsan</td>
+                <td>man</td>
+                <td>1385858588</td>
+            </tr>
+        </table>
+        <hr align="left" width="170">
+        <b>有表头的表格*垂直格式</b><br>
+        <table border="1">
+            <tr>
+                <th>Name:</th>
+                <td>zhangsan</td>
+            </tr>
+            <tr>
+                <th>Sex:</th>
+                <td>man</td>
+            </tr>
+
+            <tr>
+                <th>Telephone</th>
+                <td>1385858588</td>
+            </tr>
+        </table>
+        <hr align="left" width="170">
+        <b>带有标题的表格</b><br>
+        <table border="1">
+            <caption>张三的信息</caption>
+            <tr>
+                <th>Name:</th>
+                <th>Sex:</th>
+                <th>Telephone</th>
+            </tr>
+
+            <tr>
+                <td>zhangsan</td>
+                <td>man</td>
+                <td>1385888888</td>
+            </tr>
+        </table>
+        <hr width="170" align="left">
+        <b>水平跨两列的表格</b><br>
+        <table border="1">
+            <caption>张三的信息</caption>
+            <tr>
+                <th>Name:</th>
+                <th>Sex:</th>
+                <th colspan="2" align="center">Telephone:</th>
+            </tr>
+            <tr>
+                <td>zhangsan</td>
+                <td>man</td>
+                <td>6022345</td>
+                <td>1388888588</td>
+            </tr>
+        </table>
+        <b>水平合并单元格使用 colspan属性，也就是合并两列的意思</b>
+        <hr width="170" align="left">
+        <b>垂直跨两行的表格</b><br>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>Name:</th>
+                <td>zhangsan</td>
+            </tr>
+            <tr>
+                <th>Sex:</th>
+                <td>man</td>
+            </tr>
+            <tr>
+                <th rowspan="2"> Telephone:</th>
+                <td>450099</td>
+            </tr>
+            <tr>
+                <td>1385888888</td>
+            </tr>
+        </table>
+        <b>垂直合并单元格使用属性rowspan,也就是合并两行的意思</b>
+        <b>单元格内间距使用属性：cellpadding</b><br>
+        <b>单元格之间间距使用属性：cellspacing</b>
+        <hr align="left" width="170">
+        <b>表格里边嵌套其他子标签</b>
+        <table border="1" cellpadding="10">
+
+            <tr>
+                <td> row 1 ,cell 1</td>
+                <td>
+                    <ul>
+                        <li>apple</li>
+                        <li>banana</li>
+                        <li>orange</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th>row 2,cell 1</th>
+                <td align="center">
+                    <table border="1">
+                        <tr>
+                            <td>1-1</td>
+                            <td>1-2</td>
+                        </tr>
+                        <tr>
+                            <td>2-1</td>
+                            <td>2-2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
     </li>
 </ul>
 </body>
