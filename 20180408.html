@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>document.createElement("myHero")</script>
+    <style>
+        myHero {
+            display: block;
+            background-color: chartreuse;
+            padding: 40px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<myHero>this is new element for h5</myHero>
+<b>document.createElement("myHero")是为了给IE浏览器添加新元素</b>
+<article>this article is new Element for h5</article>
+
+
+<h1>canvas</h1>
+
+<ul>
+    canvas的使用和介绍：<br>
+    1.获取画布对象通过js方法document.getElementById<br>
+    2.创建context对象；<br>
+    3.通过context对象来执行画的操作<br>
+    <li>
+        canvas矩形<br>
+        <!--在设置画布属性时，有高height，宽width，样式style<border 涉及到边框的宽度和样式：圆圈，方形等等>-->
+        <canvas id="myCanvas" width="200px" height="100px" style="border: 1px solid #c3c3c3;"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#ff0000";
+            ctx.fillRect(0, 0, 150, 75);
+        </script>
+    </li>
+    <li>
+        cavas直线<br>
+        <!--moveTo代表起点,lineTo代表终点-->
+        <canvas id="line" width="200px" height="100px" style="border: 1px solid#c3c3c3;"></canvas>
+        <script>
+            var canvas = document.getElementById("line");
+            var ctx = canvas.getContext("2d");
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100);
+            ctx.stroke();
+        </script>
+    </li>
+
+    <li>
+        canvas画圆<br>
+        <canvas id="arc" width="200xp" height="100pd" style="border: 1px solid#c3c3c3"></canvas>
+        <script>
+            var canvas=document.getElementById("arc");
+            var ctx=canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.stroke();
+        </script>
+    </li>
+
+    <li>
+        canvas画文本*实心<br>
+        <canvas id="shixin" width="200px" height="100px" style="border: 1px solid#c3c3c3"></canvas>
+
+        <script>
+            var canvas=document.getElementById("shixin");
+            var ctx=canvas.getContext("2d");
+            ctx.font="30px Arial";
+            ctx.fillText("hello html5",10,50);
+        </script>
+    </li>
+
+    <li>
+        canvas画文本*空心<br>
+        <canvas id="kongxin" style="border: 1px solid#c3c3c3" width="200xp" height="100p" ></canvas>
+        <script>
+            var canvas=document.getElementById("kongxin");
+            var ctx=canvas.getContext("2d");
+            ctx.font="30px Arial"
+            ctx.strokeText("hello h5",10,50);
+        </script>
+    </li>
+
+    <li>
+        canvas线性渐变<br>
+        <canvas id="gradient" style="border: 1px solid#c3c3c3" width="200px" height="100px"></canvas>
+        <script>
+            var canvas=document.getElementById("gradient");
+            var context=canvas.getContext("2d");
+            var granient=context.createLinearGradient(0,0,200,0);
+            granient.addColorStop(0,"red");
+            granient.addColorStop(1,"white");
+            context.fillStyle=granient;
+            context.fillRect(0,0,200,100);
+        </script>
+        <br>
+        <canvas id="gradient1" width="200px" height="100px" style="border: 1px solid#c3c3c3;"></canvas>
+        <script>
+            var canvas=document.getElementById("gradient1");
+            var ctx=canvas.getContext("2d");
+            var gradient1=ctx.createRadialGradient(75,50,5,100,60,100);
+            gradient1.addColorStop(0,"red");
+            gradient1.addColorStop(1,"white");
+            ctx.fillStyle=gradient1;
+            ctx.fillRect(0,0,150,80);
+        </script>
+    </li>
+</ul>
+
+
+</body>
+</html>
