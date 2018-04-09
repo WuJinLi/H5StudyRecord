@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 用法</title>
+
+    <script>
+        function changeText() {
+            window.alert("'hello'")
+        }
+
+
+        function getDate() {
+            document.getElementById("nowdate").innerText = Date();
+        }
+
+        function findStart() {
+            document.getElementById("demo").innerText = "hi   hello".search("hello");
+        }
+
+        function replaceWorlds() {
+            document.getElementById("replace").innerText = "hello world".replace("world", "javascript");
+        }
+
+
+        function getMapDetail() {
+            var map={"name":"zhansan","age":23,"sex":"man"};
+            var str="";
+            for (var key in map) {
+                str+=key+":"+map[key]+";";
+            }
+
+            document.getElementById("mapdetail").innerText=str;
+        }
+    </script>
+</head>
+<body>
+
+<button id="button1" onclick="changeText()">点击之前</button>
+<br>
+<button id="button2" onclick="getDate()">获取当前时间</button>
+<p id="nowdate"></p>
+
+<p>搜索hello字段的起始位置</p>
+<button onclick="findStart()">点我</button>
+<p id="demo"></p>
+
+
+<p>替换指定位置字符串</p>
+
+<button onclick="replaceWorlds()">替换字符串将world替换成javascript</button>
+
+<p>hello world</p>
+<p id="replace"></p>
+
+
+
+<button onclick="getMapDetail()">click</button>
+<b id="mapdetail" ></b>
+
+
+
+
+</body>
+
+</html>

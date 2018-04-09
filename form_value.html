@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkinfo() {
+            var str=document.forms["myForm"]["fname"].value;
+            if (str==null||str==""){
+                alert("name is not empty");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="myForm"  onsubmit="return checkinfo()">
+Name:<input type="text" name="fname">
+    <input type="submit" value="submite">
+</form>
+
+</body>
+</html>
