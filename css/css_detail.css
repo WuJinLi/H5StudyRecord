@@ -1,0 +1,17 @@
+.body {
+    font-family: "微软雅黑";
+    background: #fefefe;
+    color: #000;
+}
+
+.li{
+    color: grey;
+    font-size: 15px;
+    padding: auto;
+}
+
+.h1_stl{
+    text-align: center;
+    color: black;
+    size: 20px;
+}

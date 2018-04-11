@@ -1,14 +1,19 @@
-.body{
-    background-color: #eeeeee;
+.body {
+    font-family: "微软雅黑";
+    background: #ffd700;
+    color: #000;
 }
 
-.ps{
-    margin-left: 10px;
+
+.h1_style{
+    color: black;
+    font-size: 10px;
     text-align: center;
 }
 
-.hs{
-    font-size: 40px;
-    font-family: "Al Nile";
-    color: #ffa500;
+#p_style{
+    color: aquamarine;
+    text-align: center;
+    font-size: 20px;
 }
+

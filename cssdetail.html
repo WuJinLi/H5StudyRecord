@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/css_detail.css">
+</head>
+<body class="body">
+<h1 class="h1_stl"> CSS </h1>
+<ul>
+
+    <li class="li">
+        css的创建<br>
+        <ul>
+            <li>
+                ID选择器:id是唯一的，每一个元素仅可以有一个元素，且每个页面只可以有一个元素拥有这个id
+            </li>
+
+            <li>
+                Class选择器:可以多个元素使用一个类，也可以使用多个类在一个元素中
+            </li>
+        </ul>
+    </li>
+
+
+    <li class="li">
+        css创建<br>
+        <ul>
+            <li>
+                外部样式表：外部css资源文件
+            </li>
+
+            <li>
+                内部样式表：head标签中嵌套style标签定义
+            </li>
+
+
+            <li>
+                内联样式： body中子标签style定义
+            </li>
+        </ul>
+        三种引用方式优先级：内联样式>内部样式表>外部样式表
+    </li>
+
+    <li class="li">
+        css背景<br>
+        <ul>
+            <li>background-color:颜色值定义方法(background-color:#fefefe/grb(255,0,0)/red)<br>
+                <ul>
+                    <li>十六进制："#ffeefe"</li>
+                    <li>RGB：rgb(255,0,0)</li>
+                    <li>颜色名称：red</li>
+                </ul>
+            </li>
+            <li>background-image：默认是水平和垂直方向平铺(background-image:url('wwww.sssss.png'))<br>
+
+            </li>
+            <li>background-repeat：对背景图案进行平铺(background-repeat:repeat-x)<br>
+                <ul>
+                    取值：
+                    <li>repeat-x:水平方向平铺</li>
+                    <li>repeat-y:垂直方向平铺</li>
+                    <li>no-repeat:不设置平铺</li>
+                </ul>
+            </li>
+            <li>background-position:改变图像在背景的显示位置:<br>
+
+                <ul>
+                    <li>关键字:background-position:center
+                        <ul>
+                            <li>center</li>
+                            <li>top</li>
+                            <li>bottom</li>
+                            <li>left</li>
+                            <li>right</li>
+                        </ul>
+                    </li>
+                    <li>百分数值:background-position:20%(水平方向),50%(垂直方向)</li>
+                    <li>长度值:background-position:50px 100px 意味着图片的左上角向右移动50像素，向下移动100像素</li>
+                </ul>
+
+
+            </li>
+            <li>background-attachment：定义图片是否固定或随页面其余部分移动（background-attachment:scroll）
+                <ul>
+                    <li>scroll:图片随页面其余部分滚动，这是默认值</li>
+                    <li>fixed:背景图像是固定的</li>
+                    <li>inherit:指定backgroun-attchmentd的设置是继承父类的</li>
+                    <li>local:背景图案随滚动元素滚动</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="li">
+        css Text(文本)
+        <ul>
+            <li>color:设置文本颜色</li>
+            <li>dircection:设置文本方向</li>
+            <li>letter-spancing:设置字体间距</li>
+            <li>line-height:设置行高</li>
+            <li>text-align:对齐元素中的文本</li>
+            <li>text-decoration:向文本添加修饰</li>
+            <li>text-indent:缩进元素中文本的首行</li>
+            <li>text-shadow:设置文本阴影</li>
+            <li>text-transform:控制元素中的字母</li>
+            <li>unicode-bidi:设置或返回文本是否被重写</li>
+            <li>vertical-align:设置文本的垂直对齐</li>
+            <li>white-space:设置文本空白的处理</li>
+            <li>word-spacing:设置字间距</li>
+        </ul>
+    </li>
+
+    <li class="li">
+        css font(字体)
+        <ul>
+            <li>font:在一个声明里设置字体所有属性</li>
+            <li>font-family:指定文本的字体系列</li>
+            <li>font-size:指定文本的字体大小</li>
+            <li>font-style:指定文本的字体样式</li>
+            <li>font-variant:以小型大写字体或者正常字体显示文本</li>
+            <li>font-weight:指定字体粗细</li>
+        </ul>
+    </li>
+
+    <li class="li">
+        css 链接(link)
+        <ul>
+            <li>
+                链接样式
+                <ul>
+                    <li>a:link 正常，未访问过的链接</li>
+                    <li>a:visited 用户已访问过的链接</li>
+                    <li>a:hover 当鼠标放在链接上时</li>
+                    <li>a:active 链接被点击那一刻</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
