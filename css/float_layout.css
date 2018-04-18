@@ -1,0 +1,30 @@
+div.container {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0px;
+}
+
+div.footer, div.header {
+    padding: 0.5em;
+    color: white;
+    background-color: gray;
+    clear: left;
+}
+
+div.header {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.left {
+    margin: 0px;
+    float: left;
+    width: 160px;
+    padding: 0px;
+}
+
+div.contont {
+    margin-left: 190px;
+    border-left: 1px solid gray;
+    padding: 1em;
+}
