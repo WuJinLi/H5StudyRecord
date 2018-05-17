@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position-static</title>
+    <style>
+        .text1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: static;
+            vertical-align: center;
+        }
+
+        .pre {
+            width: 200px;
+            height: 200px;
+            position: static;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+<!--static 默认值，遵循正常的文档流，不受left,right,top,bottom所限制，也就是文档的显示按照代码的编写顺序来显示
+    所谓的文档流也就是：文档输出的顺序，自上而下。。自左而右
+-->
+<div class="pre">
+    <div class="text1">
+    </div>
+</div>
+
+<div class="pre"></div>
+<div class="text1"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position-absolute</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .per {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .text1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: -20px;
+            bottom: 0px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<!--position-absolute 绝对定位，前提是具有定位属性，或根据主窗口或者父布局，根据left,right,top,bottom来确定偏移方向，当时，偏移的
+起点是以left,right,bottom,top来确认，也就意味着absolute的偏移起点有四个位置，这也就是与relative之间的区别，该属性还是脱离正常流（文件流）
+-->
+<div class="per">
+    <div class="text1"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list-style-ul</title>
+    <style>
+        .parent-normal {
+            border: 1px solid red;
+        }
+
+        .parent-style {
+            border: 1px solid red;
+            margin-top: 5px;
+            /*list-style: url("/img/heart.png") inside none;*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="parent-normal">
+    默认状态
+    <ul>
+        <li>张三</li>
+        <li>李四</li>
+        <li>王五</li>
+    </ul>
+</div>
+
+
+<div class="parent-style">
+    list-style-image状态
+    <ul>
+        <li style="list-style-image: url('/img/heart.png')">张三</li>
+        <li style="list-style-image: url('/img/heart.png')">李四</li>
+        <li style="list-style-image: url('/img/heart.png')">王五</li>
+    </ul>
+</div>
+</body>
+</html>

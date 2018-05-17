@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position-relative</title>
+
+    <style>
+        /** {*/
+        /*margin: 0px;*/
+        /*padding: 0px;*/
+        /*}*/
+
+        .text1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .per {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: static;
+            left: 50px;
+            top: 50px;
+        }
+
+        .child-left-top {
+            width: 10px;
+            height: 10px;
+            background: red;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        .child-right-top {
+            width: 10px;
+            height: 10px;
+            position: relative;
+            top: 10px;
+            right: 10px;
+            background: blue;
+        }
+
+        .child-right-bottom {
+            width: 10px;
+            height: 10px;
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            background: orange;
+        }
+
+        .child-left-bottom {
+            width: 10px;
+            height: 10px;
+            position: relative;
+            bottom: 10px;
+            left: 10px;
+            background: pink;
+        }
+
+        .parent {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background: black;
+        }
+
+    </style>
+</head>
+<body>
+<!--position:relative定位属性，前提是是具有布局属性，以页面或者父布局（父布局也具有定位属性）的左上角为中心点，
+以left,right,top,bottom来控制偏移的方向，符合文件流输出方式-->
+<!--<div class="per">-->
+<!--<div class="text1"></div>-->
+<!--</div>-->
+
+
+<div>左上布局</div>
+<div class="parent">
+    <div class="child-left-top"></div>
+</div>
+<div>左下布局</div>
+<div class="parent">
+    <div class="child-left-bottom"></div>
+</div>
+<div>右下布局</div>
+<div class="parent">
+    <div class="child-right-bottom"></div>
+</div>
+<div>右上布局</div>
+<div class="parent">
+    <div class="child-right-top"></div>
+</div>
+</body>
+</html>

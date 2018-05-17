@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position-fixed</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .per {
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            background: blue;
+            left: 0px;
+            top: 300px;
+        }
+
+        .text1 {
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            left: 0px;
+            top: 10px;
+            background: red;
+        }
+
+        body {
+            height: 5000px;
+        }
+
+        .lay1 {
+            height: 50%;
+            background: white;
+        }
+
+        .lay2 {
+            height: 50%;
+            background: #98bf21;
+        }
+    </style>
+</head>
+<body>
+
+<div class="per">
+    <!--<div class="text1"></div>-->
+</div>
+
+<div class="lay1"></div>
+<div class="lay2"></div>
+</body>
+</html>
