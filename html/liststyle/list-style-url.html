@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>list-style-ul</title>
+    <title>list-style-url</title>
     <style>
         .parent-normal {
             border: 1px solid red;
@@ -11,15 +11,14 @@
         .parent-style {
             border: 1px solid red;
             margin-top: 5px;
-            /*list-style: url("/img/heart.png") inside none;*/
-
+            background: #666666;
+            list-style-image: url("https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?where=super");
+            list-style-position: inside;
+            list-style-type: none;
         }
-
-
     </style>
 </head>
 <body>
-
 <div class="parent-normal">
     默认状态
     <ul>
@@ -33,9 +32,9 @@
 <div class="parent-style">
     list-style-image状态
     <ul>
-        <li style="list-style-image: url('/img/heart.png')">张三</li>
-        <li style="list-style-image: url('/img/heart.png')">李四</li>
-        <li style="list-style-image: url('/img/heart.png')">王五</li>
+        <li>张三</li>
+        <li>李四</li>
+        <li>王五</li>
     </ul>
 </div>
 </body>

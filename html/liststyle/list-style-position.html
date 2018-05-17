@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list-style-position</title>
+
+    <style>
+
+        .ul-poition-outside {
+            border: 1px solid red;
+            list-style-position: outside;
+        }
+
+        .ul-poition-inside {
+            border: 1px solid red;
+            margin-top: 5px;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ul-poition-outside">
+    outside:列表项目标记放置在文本以外，且环绕文本不根据标记对齐
+    <ul>
+        <li>zhangsan</li>
+        <li>lisi</li>
+        <li>wangwu</li>
+        <li>zhaoliu</li>
+    </ul>
+</div>
+
+
+<div class="ul-poition-inside">
+    inside:列表项目标记放置在文本以内，且环绕文本根据标记对齐
+    <ul>
+        <li>zhangsan</li>
+        <li>lisi</li>
+        <li>wangwu</li>
+        <li>zhaoliu</li>
+    </ul>
+</div>
+</body>
+</html>
