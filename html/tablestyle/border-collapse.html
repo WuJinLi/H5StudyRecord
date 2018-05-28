@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border-collapse</title>
+    <style>
+        .separate {
+            border-collapse: separate;
+        }
+
+        .collapse {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<table class="separate" bgcolor="red">
+    <tr>
+        <td bgcolor="#cccccc">1-1</td>
+        <td bgcolor="#cccccc">1-2</td>
+    </tr>
+    <tr>
+        <td bgcolor="#cccccc">2-1</td>
+        <td bgcolor="#cccccc">2-2</td>
+    </tr>
+</table>
+
+
+<table class="collapse" bgcolor="red">
+    <tr>
+        <td bgcolor="#cccccc">1-1</td>
+        <td bgcolor="#cccccc">1-2</td>
+    </tr>
+    <tr>
+        <td bgcolor="#cccccc">2-1</td>
+        <td bgcolor="#cccccc">2-2</td>
+    </tr>
+</table>
+</body>
+</html>

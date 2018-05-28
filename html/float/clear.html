@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clear</title>
+
+    <style>
+        .parent {
+            width: 100%;
+        }
+
+        .sun-1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: right;
+        }
+
+        .sun-2 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            float: right;
+            clear: right;
+        }
+
+        .sun-3 {
+            width: 100px;
+            height: 100px;
+            float: none;
+            background: green;
+        }
+
+        .sun-4 {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            float: left;
+        }
+
+        .sun-5 {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            float: left;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="sun-1">float:right</div>
+    <div class="sun-2">float:right clear:right</div>
+    <div class="sun-3">float:none</div>
+    <div class="sun-4">float:left</div>
+    <div class="sun-5">float:left clear:left</div>
+</div>
+</body>
+</html>

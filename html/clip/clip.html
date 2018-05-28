@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clip</title>
+
+    <style>
+        .text-bottom {
+            color: #333333;
+            position: absolute;
+            left: 3em;
+            top: 1em;
+            font: 26px "Century Gothic", Arial, Helvetica, sans-serif;
+            clip: rect(18px auto auto auto);
+        }
+
+        .text-top {
+            color: #cc0000;
+            position: absolute;
+            left: 3em;
+            top: 1em;
+            font: 26px "Century Gothic", Arial, Helvetica, sans-serif;
+            clip: rect(0 auto 18px 0);
+        }
+
+        .container {
+            width: 28em;
+            height: 5em;
+            margin: 1em auto;
+            position: relative;
+            background: #f6f6f6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="#" class="text-bottom">clip-bottom</a>
+    <a href="#" class="text-top">clip-bottom</a>
+</div>
+</body>
+</html>
